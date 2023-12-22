@@ -1,4 +1,5 @@
 :root {
+
   --whiteText: #fff;
   --textColor: #640c8d;
   --borderSearch: #fb5fe6;
@@ -73,3 +74,4 @@ a {
 a:hover{
   color: var(--whiteText);
 }
+
