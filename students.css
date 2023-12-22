@@ -1,70 +1,77 @@
 :root {
-    
-    --textColor: #640c8d;
-    --borderSearch: #FB5FE6;
-    --borderHoverSearch: #fbde5f;
-   
-  
-    --borderListElements: #b225e0;
-    --colorListElements: #00fefe;
-    --colorListElementsHover: #00fe4c;
-  
-    --gradientBg1: #85d4ff;
-    --gradientBg2: #b6abfd;
-    --gradientBg3: #e683fc;
-  }
-  
-  input {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    text-align: center;
-    width: 200px;
-    height: 40px;
-    border-radius: 13px;
-    border: 3px solid var(--borderSearch);
-  }
-  
-  input:focus {
-    outline: none;
-    color: var(--textColor)
-  }
-  
-  ::placeholder{
-      color: var(--textColor)
-  }
-  
-  .student-item {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 15px;
-    border: 3px solid var(--borderListElements);
-  
-    background: linear-gradient(
-      280deg,
-      var(--gradientBg1) 0%,
-      var(--gradientBg2) 44%,
-      var(--gradientBg3) 100%
-    );
-    padding: 15px;
-    width: 150px;
-    margin: 5px;
-    cursor: pointer;
-  }
-  
-  
-  .student-item:hover {
-    transition: background-color 500ms linear;
-    background: var(--colorListElementsHover);
-  }
-  
-  
-  
-  a {
-    text-decoration: none;
-    color: var(--textColor);
-  }
-  
+
+  --whiteText: #fff;
+  --textColor: #640c8d;
+  --borderSearch: #fb5fe6;
+  --borderHoverSearch: #fbde5f;
+
+  --borderListElements: #b225e0;
+  --colorListElements: #00fefe;
+  --colorListElementsHover: #00fe4c;
+
+  --gradientBg1: #85d4ff;
+  --gradientBg2: #b6abfd;
+  --gradientBg3: #e683fc;
+}
+
+input {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  width: 360px;
+  height: 50px;
+  border-radius: 13px;
+  border: 3px solid var(--borderSearch);
+}
+
+input:focus {
+  outline: none;
+  color: var(--textColor);
+}
+
+::placeholder {
+  color: var(--textColor);
+}
+
+.student-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 3px solid var(--borderListElements);
+
+  background: linear-gradient(
+    280deg,
+    var(--gradientBg1) 0%,
+    var(--gradientBg2) 44%,
+    var(--gradientBg3) 100%
+  );
+  padding: 15px;
+  width: 300px;
+  margin: 8px;
+}
+
+.student-item:hover {
+  transition: background-color 500ms linear;
+  background: var(--colorListElementsHover);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+a:hover{
+  color: var(--whiteText);
+}
+
