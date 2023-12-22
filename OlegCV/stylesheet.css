@@ -1,0 +1,202 @@
+:root {
+  --colorBlue: #9a15b5;
+  --colorRed: #fc5ad9;
+  --colorBgLigth: #f7def2;
+  --colorRedDark: #6c227f;
+  --colorBlack: #232323;
+  --colorWhite: #fff;
+  --colorTitle: #54ce0d;
+  --colorTitleBg: #9ce671;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  color: var(--colorRedDark);
+}
+
+body {
+  background-color: var(--colorRed);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv {
+  display: flex;
+  width: 80%;
+  height: 80%;
+}
+
+.profile {
+  flex: 1;
+  max-width: 35%;
+  background-color: var(--colorRedDark);
+  border-left: 40px solid var(--colorBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile .profile-image {
+  margin: 30px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  overflow: hidden;
+  position: relative;
+}
+.profile .profile-image:after {
+  content: " ";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: 50%;
+  border: 4px solid #eee;
+  z-index: 1;
+}
+.profile .profile-image img {
+  width: 100%;
+}
+
+.profile h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #535353;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.profile h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.skills > .skillTitle2 > p {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile .social-links {
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
+.socialIcon1:hover {
+  content: url(".//assets/social/githubHover.svg");
+}
+
+.socialIcon2:hover {
+  content: url(".//assets/social/linkedinHover.svg");
+}
+
+.socialIcon3:hover {
+  content: url(".//assets/social/facebookHover.svg");
+}
+
+.socialIcon4:hover {
+  content: url(".//assets/social/instagramHover.svg");
+}
+
+.skills {
+  flex: 2;
+  background-color: var(--colorBgLigth);
+  border-right: 10px solid var(--colorBlue);
+  padding-top: 20px;
+  padding-left: 70px;
+}
+
+.skill .progress {
+  background-color: var(--colorRed);
+  margin: 10px 0;
+  height: 15px;
+  width: 80%;
+}
+
+.personal .skill .progress {
+  background-color: var(--colorTitleBg);
+  margin: 10px 0;
+  height: 15px;
+  width: 80%;
+}
+
+.skill .progress .percentage {
+  height: 100%;
+  background-color: var(--colorBlue);
+}
+.blue {
+  color: var(--colorBlue);
+}
+.skills section.personal .skill .progress .percentage {
+  background-color: var(--colorTitle);
+}
+
+/* skills & titles */
+
+.skillTitle {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skillTitle > img {
+  width: 20px;
+}
+
+.professionalTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skillTitle2 {
+  display: flex;
+  gap: 15px;
+}
+
+.skillTitle2 > img {
+  width: 50px;
+}
+
+/* social icons configuration */
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.socialIcon > a > img {
+  width: 40px;
+}
+
+h1,
+h2,
+.title {
+  color: var(--colorTitle);
+}
+
+h1:hover {
+  color: var(--colorRed);
+  cursor: pointer;
+}
+h2:hover {
+  color: var(--colorRed);
+  cursor: pointer;
+}
