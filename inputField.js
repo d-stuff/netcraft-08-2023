@@ -6,7 +6,7 @@ searchInput.addEventListener('input', () => {
         if (!studentItem.innerHTML.toLowerCase().includes(searchInput.value.toLowerCase())) {
             studentItem.style.display = 'none';
         } else {
-            studentItem.style.display = 'block';
+            studentItem.style.display = 'flex';
         }
     });
 });
