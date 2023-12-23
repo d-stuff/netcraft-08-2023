@@ -1,3 +1,4 @@
+
 :root {
 
   --whiteText: #fff;
@@ -36,7 +37,7 @@ input:focus {
 
 .student-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -49,22 +50,22 @@ input:focus {
   border-radius: 15px;
   border: 3px solid var(--borderListElements);
 
-  background: linear-gradient(
+  width: calc(33.3% - 63px);
+  
+  /*background: linear-gradient(
     280deg,
     var(--gradientBg1) 0%,
     var(--gradientBg2) 44%,
     var(--gradientBg3) 100%
-  );
-  padding: 15px;
-  width: 300px;
-  margin: 8px;
+  );*/
+  padding: 15px;   
 }
 
-.student-item:hover {
+/*.student-item:hover {
   transition: background-color 500ms linear;
   background: var(--colorListElementsHover);
   cursor: pointer;
-}
+}*/
 
 a {
   text-decoration: none;
@@ -75,3 +76,32 @@ a:hover{
   color: var(--whiteText);
 }
 
+/*Students-list Container Aviv's issue*/
+.students-container {
+  max-width: 1170px;
+  margin: 80px auto;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+}
+.social-nav {
+  width: 100%;
+  display: flex;  
+  justify-content: space-evenly;
+}
+.student-img {
+  height: 100px;
+  width: 100px;
+  border: 3px solid var(--borderListElements);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.students-list {
+  width: 100%;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding-block: 30px; 
+}
