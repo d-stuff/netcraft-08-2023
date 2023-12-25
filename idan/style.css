@@ -1,0 +1,57 @@
+/* ---------------- BOILERPLATE ---------------- */
+* {
+  padding: 0;
+  margin: 0;
+}
+/* ---------------- BODY AND HTML ---------------- */
+html {
+  height: 100vh;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  background: linear-gradient(#13527e, #07314f);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+#me {
+  width: 10rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.linkedinImage {
+    width: 5rem;
+}
+.githubImage {
+    width: 3rem;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+main ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
